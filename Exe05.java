@@ -1,5 +1,5 @@
-/*Construa um programa que leia vários números e informe quantos desses números digitados estão entre 100 e 200. 
-Quando o valor 0 (zero) for lido o algoritmo deverá cessar sua execução.*/
+/*Construa um programa que leia vÃ¡rios nÃºmeros e informe quantos desses nÃºmeros digitados estÃ£o entre 100 e 200. 
+Quando o valor 0 (zero) for lido o algoritmo deverÃ¡ cessar sua execuÃ§Ã£o.*/
 package listawhile;
 import java.util.Scanner;
 public class Exe05 {
@@ -7,12 +7,13 @@ public class Exe05 {
 		Scanner key = new Scanner (System.in);
 		int num = 1, qtos = 0;
 		while (num != 0) {
+			if ((num > 100) && (num < 200)) {
+			qtos ++;	
+		}
 			System.out.println("Digite um numero");
 			num = key.nextInt();
 			}
-		if ((num > 100) && (num < 200)) {
-			qtos = (qtos ++);	
-		}
+		
 		System.out.println("Foram Digitados " + qtos + " numeros entre 100 e 200");
 	}
 
