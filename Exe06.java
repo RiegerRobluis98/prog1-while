@@ -11,8 +11,7 @@ public class Exe06 {
 		x = key.nextInt();
 		System.out.println("Digite o Valor de Y");
 		y = key.nextInt();
-		val = x ^ y;
-		System.out.println(val);
+		
 	}
 
 }
